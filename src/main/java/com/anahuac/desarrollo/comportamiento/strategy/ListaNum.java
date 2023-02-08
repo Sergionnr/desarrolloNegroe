@@ -8,7 +8,10 @@ public class ListaNum {
 		this.sb = sb;
 	}
 	public void display() {
-		System.out.println(this.nums);
+		for(int i = 0; i < this.nums.length; i++) {
+			System.out.print(this.nums[i] + ", ");
+		}
+		System.out.println("");
 	}
 	public void performSort() {
 		this.nums = sb.sort(this.nums); 
